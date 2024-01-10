@@ -10,6 +10,11 @@ import com.example.demo.game.PacMan;
 @Configuration
 public class GamingConfig {
 	
+	@Bean 
+	public int age() {
+		return 20;
+	}
+	
 	@Bean
 	public GamingConsole game() {
 		return new PacMan();
